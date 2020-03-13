@@ -26,8 +26,9 @@ set -x
 
 PREFIX=$(pwd)
 
-pushd ./gdb
-./configure \
+mkdir ./gdb/build
+pushd ./gdb/build
+../configure \
     --prefix=$PREFIX \
     --with-python=$(which python) \
     --enable-targets=all \
