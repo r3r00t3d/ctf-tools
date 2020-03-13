@@ -2,7 +2,8 @@
 set -eu -o pipefail
 
 # for angr
-apt-get -y install virtualenvwrapper python2.7-dev build-essential libxml2-dev libxslt1-dev git libffi-dev cmake libreadline-dev libtool debootstrap debian-archive-keyring libglib2.0-dev libpixman-1-dev libqt4-dev graphviz-dev binutils-multiarch nasm libc6:i386 libgcc1:i386 libstdc++6:i386 libtinfo5:i386 zlib1g:i386
+# apt-get -y install virtualenvwrapper python2.7-dev build-essential libxml2-dev libxslt1-dev git libffi-dev cmake libreadline-dev libtool debootstrap debian-archive-keyring libglib2.0-dev libpixman-1-dev libqt4-dev graphviz-dev binutils-multiarch nasm libc6:i386 libgcc1:i386 libstdc++6:i386 libtinfo5:i386 zlib1g:i386
+apt-get -y install openjdk-8-jdk zlib1g:i386 libtinfo5:i386 libstdc++6:i386 libgcc1:i386 libc6:i386 libssl-dev nasm binutils-multiarch qtdeclarative5-dev debian-archive-keyring debootstrap cmake libxslt1-dev libxml2-dev python3-setuptools python3-pip
 
 # for angr-management
-apt-get -y install python-qt4 python-sip python-pygraphviz
+# apt-get -y install python-qt4 python-sip python-pygraphviz
