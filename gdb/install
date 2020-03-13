@@ -30,9 +30,9 @@ mkdir ./gdb/build
 pushd ./gdb/build
 ../configure \
     --prefix=$PREFIX \
-    --with-python=$(which python) \
-    --enable-targets=all \
-    --with-guile=guile-2.0
+    --with-python=$(which python3)
+#    --enable-targets=all \
+#    --with-guile=guile-2.0
 make -j $(nproc)
 make install
 # remove build artifacts
@@ -42,3 +42,5 @@ popd
 # reduce binary size a little...
 strip bin/gdb || true
 strip bin/gdbserver || true
+
+export LC_CTYPE=C.UTF-8
