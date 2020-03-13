@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:bionic
 
 # wrapper script for apt-get
 COPY .docker/apt-get-install /usr/local/bin/apt-get-install

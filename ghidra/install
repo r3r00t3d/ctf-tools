@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
-[ -e https://ghidra-sre.org/ghidra_9.1-BETA_DEV_20190923.zip ] || wget https://ghidra-sre.org/ghidra_9.1-BETA_DEV_20190923.zip
-[ -e ghidra_9.1-BETA_DEV ] || unzip ghidra_9.1-BETA_DEV_20190923.zip
+[ -e https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip ] || wget https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip
+[ -e ghidra_9.1.2-PUBLIC ] || unzip ghidra_9.1.2_PUBLIC_20200212.zip
 mkdir -p bin
 cd bin
-ln -s ../ghidra_9.1-BETA_DEV/ghidraRun ghidra
+ln -s ../ghidra_9.1.2-PUBLIC/ghidraRun ghidra
